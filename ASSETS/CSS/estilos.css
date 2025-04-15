@@ -16,7 +16,10 @@
 
 /* Ajuste do Body */
 body {
-    background-color: #000;
+    /* background-color: #DBC0ED; */
+    /* background-color: #009F96; */
+    background-color: #BDEDE9;
+    /* background-color: #943ADE; */
     height: 100vh;
 }
 
@@ -31,13 +34,14 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #943ADE;
     font-size: 42px;
     line-height: 40px;
+    font-weight: bolder;
 }
 
 h2 {
-    color: #fff;
+    color: #943ADE;
     font-size: 24px;
     text-align: center;
 }
@@ -49,13 +53,18 @@ h3 {
 }
 
 p {
-    color: #fff;
+    color: #000000;
     margin: 20px 0px;
 }
 
 span {
-    color: #ff8400;
+    color: #009F96;
     font-weight: bold;
+}
+
+span texto{
+    color: #000;
+    font-weight: bolder;
 }
 
 .menu-mobile {
@@ -66,8 +75,8 @@ span {
 
 /*Ajustes Logo*/
 .logo img {
-    height: 50px;
-    width: 200px;
+    height: 100PX;
+    width: 100PX;
 }
 
 /*Ajustes Botão Laranja*/
@@ -398,6 +407,52 @@ footer .line-footer .borda {
     margin-top: 10px;
     border-top: 5px solid #ff8400;
     display: flex;
+}
+
+
+/* Adicione ao final do seu arquivo CSS existente */
+
+/* Estilos para mensagens de feedback */
+.feedback-mensagem {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.feedback-mensagem .sucesso {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback-mensagem .erro {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Melhorias no formulário */
+form input:focus, form textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 132, 0, 0.5);
+    border: 1px solid #ff8400;
+    outline: none;
+}
+
+/* Responsividade para mensagens */
+@media screen and (max-width: 768px) {
+    .feedback-mensagem {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 14px;
+    }
 }
 
 /* Oitava parte do projeto */
