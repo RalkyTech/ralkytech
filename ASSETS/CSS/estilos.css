@@ -1,0 +1,593 @@
+@charset "UTF-8";
+
+/*Importar fonte padrão site*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Estilização Geral Página*/
+
+/*Resetar Configurações Página*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*Delimita que os elemento fiquem dentro da borda da caixa*/
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ajuste do Body */
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1200px;
+    /*Determinar o valor máximo da largura da página */
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    color: #ff8400;
+    font-size: 15px;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    margin: 20px 0px;
+}
+
+span {
+    color: #ff8400;
+    font-weight: bold;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/*1 Parte Estilização - Cabeçalho/Menu*/
+
+/*Ajustes Logo*/
+.logo img {
+    height: 50px;
+    width: 200px;
+}
+
+/*Ajustes Botão Laranja*/
+.btn-laranja button {
+    padding: 10px 40px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #ff8400;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-laranja button:hover {
+    box-shadow: 0px 0px 20px #ee8d25;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* Ajustes Botão Verde */
+.btn-verde button {
+    padding: 10px 40px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #35fc03;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-verde button:hover {
+    box-shadow: 0px 0px 20px #5ff333;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* Ajustes Header - Cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*2 Parte - Estilos Topo */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+/*Ajustes Img Topo*/
+
+.img-topo-site {
+    display: flex;
+    height: 300px;
+    width: 300px;
+}
+
+/*Criando efeito flutar na imagem*/
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* Aplicando Animação na imagem */
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.txt-topo-site h1 {
+    font-size: 32px;
+}
+
+.txt-topo-site p {
+    font-size: 13px;
+}
+
+/*Terceira Parte - Especialidades*/
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 20px;
+}
+
+.especialidades .especialidades-box {
+    padding: 20px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #ff8400;
+}
+
+.especialidades .especialidades-box img {
+    width: 200px;
+    height: 200px;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* Quarta Parte do Projeto */
+/* Ajuste da imagem */
+.sobre .img-sobre img {
+    height: 400px;
+    width: 400px;
+}
+
+/* Ajuste Section Sobre */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 30px;
+}
+
+section.sobre .txt-sobre p {
+    text-align: justify;
+}
+
+section.sobre .txt-sobre h2 {
+    text-align: left;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+section.sobre .txt-sobre h2 span {
+    font-size: 35px;
+    display: block;
+}
+
+
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff8400;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.btn-social button:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px #ff8400;
+    cursor: pointer;
+}
+
+/* Quinta Parte Projeto */
+/* Ajustes Protifolio */
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 8px #ff8400;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 40px;
+    transition: 8s;
+    position: relative;
+}
+
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+/* Ajustes Overlay */
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #ff840057;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Ajustes Fale Conosco */
+
+section.fale-conosco {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #464545;
+    border: 0px;
+    outline: 0px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ff8400;
+    font-size: 18px;
+}
+
+form textarea {
+    /* Desabilitar o redimensionamento do TextArea */
+    resize: none;
+    max-width: 100%;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background: #ff8400;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+form .btn-enviar input:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #ff8400;
+    transition: 0.2s;
+}
+
+/* Ajustes Footer */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ff8400;
+}
+
+footer .logo-footer img {
+    width: 200px;
+    height: 50px;
+}
+
+footer .flex {
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+footer .line-footer p i {
+    color: #ff8400;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .line-footer .borda {
+    margin-top: 10px;
+    border-top: 5px solid #ff8400;
+    display: flex;
+}
+
+/* Oitava parte do projeto */
+/* Responsividade */
+
+
+
+@media screen and (max-width:1150px) {
+
+    /* Configurações gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* Cabeçalho */
+
+    .menu-desktop,
+    .btn-laranja,
+    .btn-verde {
+        display: none;
+    }
+
+    /* topo do site */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.top-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 32px;
+    }
+
+    .img-topo-site img {
+        width: 100%;
+    }
+
+    /* Especialidades */
+
+    section.especialidade {
+        padding: 40px 8%;
+    }
+
+    /* Sobre */
+
+    .sobre .img-sobre img {
+        width: 100%;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+
+    }
+
+    .btn-social button {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    /* Portifolio */
+
+    section .portifolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+
+        width: 100%;
+        max-width: 360px;
+        margin: 10px auto;
+    }
+
+    /* footer - rodape */
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    footer .line-footer p.designby {
+        left: 0px;
+        top: 0px;
+        font-size: 10px;
+    }
+
+    footer .line-footer i#faleicon {
+        font-size: 15px;
+    }
+
+    footer .line-footer a#falecom {
+        font-size: 10px;
+    }
+
+    /* Estilo Menu-Mobile */
+    .btn-abrir-menu i {
+        position: absolute;
+        color: #ff8400;
+        font-size: 40px;
+        margin-left: 320px;
+        margin-top: -55px;
+    }
+
+    .overlay-menu {
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 88888;
+    }
+
+    .menu-mobile {
+        display: flex;
+        background: #000;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile.abrir-menu~.overlay-menu {
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 5%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #ff8400;
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right;
+        list-style: none;
+    }
+
+    .menu-mobile nav ul li {
+        padding: 20px 4%;
+    }
+
+    .menu-mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 8%;
+        text-decoration: none;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: #ff8400;
+        color: #000;
+    }
+
+}
