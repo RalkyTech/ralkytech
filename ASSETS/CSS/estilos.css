@@ -17,16 +17,7 @@
 
 /* Ajuste do Body */
 body {
-    /* background-color: #DBC0ED; */
-    /* background-color: #009F96; */
-<<<<<<< HEAD
     background-color: #06020a;
-    /* background-color: #943ADE; */
-    /* background-color: #000000; */
-=======
-    background-color: #BDEDE9;
-    /* background-color: #943ADE; */
->>>>>>> 69b17bfc886a9408c86dbe3ac30413e10e3348d4
     height: 100vh;
 }
 
@@ -60,26 +51,14 @@ h3 {
 }
 
 p {
-<<<<<<< HEAD
     color: #ffffff;
-=======
     color: #000000;
->>>>>>> 69b17bfc886a9408c86dbe3ac30413e10e3348d4
     margin: 20px 0px;
 }
 
 span {
     color: #009F96;
     font-weight: bold;
-}
-
-<<<<<<< HEAD
-span texto {
-=======
-span texto{
->>>>>>> 69b17bfc886a9408c86dbe3ac30413e10e3348d4
-    color: #000;
-    font-weight: bolder;
 }
 
 .menu-mobile {
