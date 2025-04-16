@@ -255,7 +255,7 @@
                 <div class="line-footer">
                     <div class="flex">
                         <div class="logo-footer">
-                            <img src="./ASSETS/IMG/logoDev.png">
+                            <img src="./ASSETS/IMG/logo2_ralky_semfundo.png">
                         </div> <!--Fim logo-footer-->
                         <div class="btn-social">
                             <a href="#"><button><i

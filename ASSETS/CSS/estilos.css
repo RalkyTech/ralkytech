@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /*Importar fonte padrão site*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text=Red:ital,wght@0,300..700;1,300..700&display=swap');
+
 
 /*Estilização Geral Página*/
 
@@ -18,8 +19,14 @@
 body {
     /* background-color: #DBC0ED; */
     /* background-color: #009F96; */
+<<<<<<< HEAD
+    background-color: #06020a;
+    /* background-color: #943ADE; */
+    /* background-color: #000000; */
+=======
     background-color: #BDEDE9;
     /* background-color: #943ADE; */
+>>>>>>> 69b17bfc886a9408c86dbe3ac30413e10e3348d4
     height: 100vh;
 }
 
@@ -53,7 +60,11 @@ h3 {
 }
 
 p {
+<<<<<<< HEAD
+    color: #ffffff;
+=======
     color: #000000;
+>>>>>>> 69b17bfc886a9408c86dbe3ac30413e10e3348d4
     margin: 20px 0px;
 }
 
@@ -62,7 +73,11 @@ span {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
+span texto {
+=======
 span texto{
+>>>>>>> 69b17bfc886a9408c86dbe3ac30413e10e3348d4
     color: #000;
     font-weight: bolder;
 }
@@ -84,14 +99,14 @@ span texto{
     padding: 10px 40px;
     font-size: 10px;
     font-weight: 600;
-    background-color: #ff8400;
+    background-color: #943ade;
     border: 0px;
     border-radius: 30px;
     cursor: pointer;
 }
 
 .btn-laranja button:hover {
-    box-shadow: 0px 0px 20px #ee8d25;
+    box-shadow: 0px 0px 20px #dbc0ed;
     transform: scale(1.05);
     transition: 0.2s;
 }
@@ -122,11 +137,14 @@ header {
 header>.interface {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.87); */
+    width: 40vw;
+    filter: opacity(0.9);
 }
 
 header a {
-    color: #5c5c5c;
+    color: #919090;
     text-decoration: none;
     display: inline-block;
     transition: 0.2s;
@@ -250,14 +268,12 @@ section.sobre .txt-sobre h2 span {
     display: block;
 }
 
-
-
 .btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #ff8400;
+    background-color: #943ade;
     font-size: 25px;
     text-align: center;
     margin: 0px 10px;
@@ -266,7 +282,7 @@ section.sobre .txt-sobre h2 span {
 .btn-social button:hover {
     transform: scale(1.05);
     transition: 0.2s;
-    box-shadow: 0px 0px 20px #ff8400;
+    box-shadow: 0px 0px 20px #943ade;
     cursor: pointer;
 }
 
@@ -275,7 +291,7 @@ section.sobre .txt-sobre h2 span {
 
 section.portifolio {
     padding: 80px 4%;
-    box-shadow: 0px 0px 40px 8px #ff8400;
+    box-shadow: 0px 0px 40px 8px #943ade;
 }
 
 section.portifolio .flex {
@@ -371,16 +387,36 @@ form .btn-enviar input:hover {
     transition: 0.2s;
 }
 
+.feedback-mensagem {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feedback-mensagem .sucesso {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback-mensagem .erro {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
 /* Ajustes Footer */
 
 footer {
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #ff8400;
+    box-shadow: 0 0 40px 10px #943ADE;
 }
 
 footer .logo-footer img {
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 footer .flex {
@@ -405,7 +441,7 @@ footer .line-footer p a {
 
 footer .line-footer .borda {
     margin-top: 10px;
-    border-top: 5px solid #ff8400;
+    border-top: 5px solid #943ADE;
     display: flex;
 }
 
@@ -569,8 +605,10 @@ form input:focus, form textarea:focus {
         font-size: 15px;
     }
 
-    footer .line-footer a#falecom {
+    #falecom {
         font-size: 10px;
+        color: #000000;
+        background-color: #000;
     }
 
     /* Estilo Menu-Mobile */
