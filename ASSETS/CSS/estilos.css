@@ -1,8 +1,7 @@
-@charset "UTF-8";
-
-/*Importar fonte padrão site*/
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text=Red:ital,wght@0,300..700;1,300..700&display=swap');
-
+@font-face {
+    font-family: "RedHatText";
+    src: url(../../ASSETS/RedHatText/RedHatText-Regular.ttf);
+}
 
 /*Estilização Geral Página*/
 
@@ -17,6 +16,7 @@
 
 /* Ajuste do Body */
 body {
+    
     background-color: #06020a;
     height: 100vh;
 }
@@ -62,9 +62,9 @@ p {
 /*1 Parte Estilização - Cabeçalho/Menu*/
 
 /*Ajustes Logo*/
-.logo img {
-    height: 100PX;
-    width: 100PX;
+.logo {
+    height: 80PX;
+    width: 80PX;
 }
 
 /*Ajustes Botão Laranja*/
