@@ -1,6 +1,6 @@
 @font-face {
     font-family: "RedHatText";
-    src: url(../../ASSETS/RedHatText/RedHatText-Regular.ttf);
+    src: url("../fonte/RedHatText-Regular.ttf");
 }
 
 /*Estilização Geral Página*/
@@ -16,8 +16,8 @@
 
 /* Ajuste do Body */
 body {
-    
-    background-color: #06020a;
+    font-family: 'RedHatText', sans-serif;
+    background-color: #0f0819;
     height: 100vh;
 }
 
@@ -32,10 +32,12 @@ body {
 }
 
 h1 {
+    margin-top: 40px;
     color: #943ADE;
     font-size: 42px;
     line-height: 40px;
     font-weight: bolder;
+    text-align: center;
 }
 
 h2 {
@@ -45,7 +47,7 @@ h2 {
 }
 
 h3 {
-    color: #ff8400;
+    color: #943ade;
     font-size: 15px;
     text-align: center;
 }
@@ -59,82 +61,48 @@ p {
     display: none;
 }
 
-/*1 Parte Estilização - Cabeçalho/Menu*/
-
-/*Ajustes Logo*/
-.logo {
-    height: 80PX;
-    width: 80PX;
-}
-
-/*Ajustes Botão Laranja*/
-.btn-laranja button {
-    padding: 10px 40px;
-    font-size: 10px;
-    font-weight: 600;
-    background-color: #943ade;
-    border: 0px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.btn-laranja button:hover {
-    box-shadow: 0px 0px 20px #dbc0ed;
-    transform: scale(1.05);
-    transition: 0.2s;
-}
-
-/* Ajustes Botão Verde */
-.btn-verde button {
-    padding: 10px 40px;
-    font-size: 10px;
-    font-weight: 600;
-    background-color: #35fc03;
-    border: 0px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.btn-verde button:hover {
-    box-shadow: 0px 0px 20px #5ff333;
-    transform: scale(1.05);
-    transition: 0.2s;
-}
-
-/* Ajustes Header - Cabeçalho */
 
 header {
-    padding: 40px 4%;
+    background-color: rgb(51, 51, 51);
+    position: fixed;
+    top: 0;
+    /* Posiciona a section no topo */
+    left: 0;
+    /* Posiciona a section à esquerda */
+    width: 100%;
+    /* Faz a section ocupar toda a largura da tela */
+    z-index: 1000;
+    margin: 5px;
+    width: 99.5%;
 }
 
-header>.interface {
+header .container {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    /* background-color: rgba(255, 255, 255, 0.87); */
-    width: 40vw;
-    filter: opacity(0.9);
+
 }
 
-header a {
-    color: #919090;
+.logo {
+    /* margin-left: -50px; */
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    display: inline-block;
-    transition: 0.2s;
-}
-
-header nav.menu-desktop a:hover {
-    color: #fff;
-    transform: scale(1.05);
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav.menu-desktop ul li {
-    display: inline-block;
-    padding: 0px 20px;
+    font-size: 14pt;
+    font-weight: normal;
 }
 
 /*2 Parte - Estilos Topo */
@@ -195,7 +163,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px #ff8400;
+    box-shadow: 0px 0px 20px #943ade;
 }
 
 .especialidades .especialidades-box img {
@@ -417,9 +385,6 @@ footer .line-footer .borda {
     border-top: 5px solid #943ADE;
     display: flex;
 }
-
-
-/* Adicione ao final do seu arquivo CSS existente */
 
 /* Estilos para mensagens de feedback */
 .feedback-mensagem {
