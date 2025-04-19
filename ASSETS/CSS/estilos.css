@@ -1,25 +1,37 @@
 @font-face {
     font-family: "RedHatText";
-    src: url("../fonte/RedHatText-Regular.ttf");
+    src: url("../assets/fonte/RedHatText-Regular.woff2") format("woff2"),
+         url("../assets/fonte/RedHatText-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-
 /*Estilização Geral Página*/
-
 /*Resetar Configurações Página*/
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     /*Delimita que os elemento fiquem dentro da borda da caixa*/
-    font-family: 'Poppins', sans-serif;
+    font-family: 'RedHatText', sans-serif;
+}
+
+html {
+    background-color: #0f0819;
 }
 
 /* Ajuste do Body */
 body {
-    font-family: 'RedHatText', sans-serif;
-    background-color: #0f0819;
-    height: 100vh;
+    font-family: 'RedHatText', sans-serif !important;
+    background-color: #0f0819 !important;
+    min-height: 100vh;  /* Alterado de height para min-height */
+    margin: 0;
+    padding: 0;
 }
+
+main, section {
+    background-color: transparent;
+}
+
 
 .flex {
     display: flex;
@@ -61,7 +73,8 @@ p {
     display: none;
 }
 
-
+/*Primeira Parte do Projeto - Menu*/
+/*Ajuste do header*/
 header {
     background-color: rgb(51, 51, 51);
     position: fixed;
@@ -105,15 +118,16 @@ nav ul li a {
     font-weight: normal;
 }
 
-/*2 Parte - Estilos Topo */
+/*Segunda Parte do Projeto - Apresentação*/
 
 section.topo-do-site {
+    margin-top: 40px;
     padding: 40px 4%;
 }
 
 /*Ajustes Img Topo*/
-
 .img-topo-site {
+    margin-top: 50px;
     display: flex;
     height: 300px;
     width: 300px;
@@ -141,13 +155,22 @@ section.topo-do-site {
 }
 
 .txt-topo-site p {
-    font-size: 13px;
+    justify-self: center;
+    /* align-content: center; */
+    text-align: justify;
+    font-size: 15pt;
+    width: 600px;
+
 }
 
-/*Terceira Parte - Especialidades*/
+/*Terceira Parte do Projeto - Especialidades*/
 
 section.especialidades {
     padding: 40px 4%;
+}
+
+section.especialidades .interface{
+    margin-top: 60px;
 }
 
 section.especialidades .flex {
@@ -176,7 +199,7 @@ section.especialidades .flex {
     text-align: justify;
 }
 
-/* Quarta Parte do Projeto */
+/* Quarta Parte do Projeto - Sobre Nos */
 /* Ajuste da imagem */
 .sobre .img-sobre img {
     height: 400px;
@@ -195,6 +218,7 @@ section.sobre .flex {
 
 section.sobre .txt-sobre p {
     text-align: justify;
+    font-size: 15pt;
 }
 
 section.sobre .txt-sobre h2 {
@@ -227,9 +251,8 @@ section.sobre .txt-sobre h2 span {
     cursor: pointer;
 }
 
-/* Quinta Parte Projeto */
+/* Quinta Parte  do Projeto - Protifolio */
 /* Ajustes Protifolio */
-
 section.portifolio {
     padding: 80px 4%;
     box-shadow: 0px 0px 40px 8px #943ade;
@@ -277,8 +300,8 @@ section.portifolio .flex {
     opacity: 1;
 }
 
+/*Sexta Parte do Projeto - Fale Conosco*/
 /* Ajustes Fale Conosco */
-
 section.fale-conosco {
     padding: 80px 4%;
 }
@@ -328,26 +351,7 @@ form .btn-enviar input:hover {
     transition: 0.2s;
 }
 
-.feedback-mensagem {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.feedback-mensagem .sucesso {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-}
-
-.feedback-mensagem .erro {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-}
-
+/*Setima Parte do Projeto - Rodapé*/
 /* Ajustes Footer */
 
 footer {
@@ -386,53 +390,8 @@ footer .line-footer .borda {
     display: flex;
 }
 
-/* Estilos para mensagens de feedback */
-.feedback-mensagem {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.feedback-mensagem .sucesso {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-}
-
-.feedback-mensagem .erro {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-}
-
-/* Melhorias no formulário */
-form input:focus, form textarea:focus {
-    box-shadow: 0 0 10px rgba(255, 132, 0, 0.5);
-    border: 1px solid #ff8400;
-    outline: none;
-}
-
-/* Responsividade para mensagens */
-@media screen and (max-width: 768px) {
-    .feedback-mensagem {
-        width: 90%;
-        margin: 10px auto;
-        font-size: 14px;
-    }
-}
-
 /* Oitava parte do projeto */
 /* Responsividade */
-
-
 
 @media screen and (max-width:1150px) {
 
@@ -450,29 +409,24 @@ form input:focus, form textarea:focus {
         line-height: 30px;
     }
 
-    /* Cabeçalho */
-
-    .menu-desktop,
-    .btn-laranja,
-    .btn-verde {
-        display: none;
-    }
-
     /* topo do site */
+
+    section.top-do-site {
+        margin-top: 40px;
+        padding: 20px 8%;
+    }
 
     section.topo-do-site .flex {
         gap: 40px;
     }
 
-    section.top-do-site {
-        padding: 20px 8%;
-    }
 
     .topo-do-site .txt-topo-site h1 {
         font-size: 32px;
     }
 
     .img-topo-site img {
+        margin-top: 40px;
         width: 100%;
     }
 
