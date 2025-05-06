@@ -16,15 +16,14 @@ span {
     font-weight: normal;
 }
 
-.btn-login {
-    width: 70px;
-    height: 25px;
-}
-
 .service-item img {
     width: 290px;
     height: 100px;
 }
+
+/*********************************************/
+/*------------- Seção Menu / Header ---------*/
+/*********************************************/
 
 header {
     background-color: rgb(51, 51, 51);
@@ -33,11 +32,10 @@ header {
     /* Posiciona a section no topo */
     left: 0;
     /* Posiciona a section à esquerda */
-    width: 100%;
+    width: 99%;
     /* Faz a section ocupar toda a largura da tela */
     z-index: 1000;
     margin: 5px;
-    width: 99.5%;
 }
 
 header .container {
@@ -46,13 +44,12 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    height: 100px;
 }
 
-.logo {
-    /* margin-left: -50px; */
-    height: 40px;
-    width: auto;
+#logo {
+    height: 80px;
+    width: 80px;
 }
 
 nav ul {
@@ -62,20 +59,16 @@ nav ul {
     gap: 50px;
 }
 
-nav ul li a {
+#navbarNav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 24pt;
     font-weight: normal;
 }
 
-.login-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
+/*********************************************/
+/*------------- Seção Banner ----------------*/
+/*********************************************/
 
 .banner {
     background: url('../imagem/testeescuro4.jpeg') no-repeat center center/cover;
@@ -85,16 +78,15 @@ nav ul li a {
     box-shadow: 2px 8px 10px 1px rgb(100, 100, 100);
     margin: 5px;
     min-height: 100vh;
+    align-content: center;
 }
+
 
 .banner h1 {
-    font-size: 1.5em;
     color: #ffffff;
-    margin-top: 80px;
 }
 
-.banner p {
-    font-size: 1.2em;
+.banner h3 {
     color: #ffffff;
 }
 
@@ -177,12 +169,24 @@ nav ul li a {
     font-weight: normal;
 }
 
+/*********************************************/
+/*------------- Seção Video Projeto----------*/
+/*********************************************/
+
 .container-video-apresenta {
     background-color: rgb(0, 0, 0);
     overflow: auto;
     text-align: center;
-    height: 600px;
+    width: 99%;
+    height: 100vh;
     margin: 5px;
+    border: solid red;
+}
+
+.container-video-apresenta h1 {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
 }
 
 .apresenta {
@@ -190,234 +194,32 @@ nav ul li a {
     background-image: url(../imagem/tela-video-transp.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 640px;
-    height: 360px;
+    width: 740px;
+    height: 435px;
     padding: 10px;
-    border-radius: 10px;
     justify-self: center;
 }
 
-.container-video-apresenta h1 {
-    color: white;
-    text-align: center;
-    padding-top: 70px;
-}
 
 .container-video-apresenta h4 {
     color: white;
     text-align: center;
-    padding: px;
 }
 
 #meuVideo {
     justify-content: center;
-    width: 450px;
-    height: 300px;
-    margin-top: 30px;
+    width: 850px;
+    height:380px;
+    margin-top: 19px;
+    margin-left: -48px;
+    z-index: 1000;
 }
 
-
-/*********************************************/
-/*------------- Seção Depoimentos------------*/
-/*********************************************/
-/* Seção de Comentários */
-.comentario {
-    background: url('../img/comentario_fundo10.png') no-repeat center center/cover;
-    color: black;
-    text-align: center;
-    padding: 100px 0;
-    background-color: #f8f9fa;
-    position: relative;
-    border: none;
-    min-height: 100vh;
-
-}
-
-.comentario h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.5rem;
-    color: #f8f9fa;;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.comentario h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background: linear-gradient(90deg, #ff6b6b, #f8a5c2);
-}
-
-/* Container do Carrossel */
-#comentariosCarousel {
-    display: flex;
-    margin-top: 150px;
-    padding: 20px 0;
-}
-
-/* Cards de depoimento - CORREÇÃO: usando classes reais do seu código */
-.col-md-4.mb-4 .card {
-    border: none;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    background-color: white;
-    margin: 10px 10px;
-    height: 100%;
-}
-
-.col-md-4.mb-4 .card:hover {
-    transform: translateY(-10px);
-}
-
-/* Foto de Perfil */
-.foto-perfil-container {
-    width: 100px;
-    height: 100px;
-    margin: -10px auto 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #696969;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    background-color: #fff;
-}
-
-.foto-perfil-depoimento {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-
-/* Conteúdo do Card */
-.card-body {
-    padding: 50px 20px 20px;
-    text-align: center;
-}
-
-.h5_depoimento {
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-.depoimento-date {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-bottom: 10px;
-}
-
-.p_depoimento {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 15px;
-}
-
-/* Avaliação com Estrelas */
-.avaliacao {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    color: #ffc107;
-    margin: 10px 0;
-}
-
-/* Controles do Carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 40px;
-    height: 40px;
-    background-color: #f8a5c2;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-    
-}
-
-.carousel-control-prev {
-    left: -40px;
-}
-
-.carousel-control-next {
-    right: -20px;
-}
-
-
-
-
-
-/*********************************************/
-/*------------- Seção Quem Somos------------*/
-/*********************************************/
-.container-quem-somos {
-    display: flex;
-    /* Ativa o Flexbox para o alinhamento */
-    background: url('../../assets/img/sobreFundo10.png') no-repeat center center/cover;
-    color: white;
-    box-shadow: 2px 8px 10px 1px rgb(100, 100, 100);
-    background-color: white;
-    justify-content: space-between;
-    /* Alinha os itens no centro verticalmente */
-    align-items: center;
-    /* Alinha os itens no centro horizontalmente */
-    text-align: justify;
-    /* Garante que o texto dentro da section fique centralizado */
-    min-height: 100vh;
-    /* A section ocupa toda a altura da tela */
-}
-
-.container-quem-somos .icones {
-    height: 450px;
-    width: 100%;
-
-}
-
-.container-quem {
-    width: 80%;
-    align-items: center;
-    justify-items: center;
-}
-
-.row-q {
-    display: flex;
-}
-
-.container-quem .row .p-2 {
-    display: flex;
-    width: auto;
-    justify-content: center;
-}
-
-
-.container-quem-somos p {
-    /* font-family: 'Courier New', Courier, monospace; */
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: white;
-    text-align: justify;
-    /* Alinha o texto pelo modo Justificado */
-    line-height: 1.6;
-    /* Opicional: melhora a legibilidade */
-    font-weight: normal;
-    max-width: 70%;
-    align-content: center;
-}
 
 /*********************************************/
 /*------------- Seção Contato ---------------*/
 /*********************************************/
-/* Configuração da seção com vídeo */
 .contato {
-    position: relative;
     width: 100%;
     min-height: 100vh;
     /* Ocupa toda a altura da tela */
@@ -426,7 +228,6 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Ajuste da imagem */
@@ -447,14 +248,14 @@ section.contato .txt-contato p {
     font-weight: normal;
 }
 
-section.contato .txt-contato .somosadev p {
+section.contato .txt-contato .somosaralky p {
     text-align: center;
     font-size: 35px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-section.contato .txt-contato .somosadev p span {
+section.contato .txt-contato .somosaralky p span {
     font-size: 35px;
     display: block;
 }
@@ -468,6 +269,33 @@ h1 {
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+}
+
+
+h5 {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+}
+
+.equipe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.equipe img {
+    border-radius: 50%;
+}
+
+.equipe img:hover {
+    box-shadow: 0px 0px 30px #943ade;
+    transform: scale(1.1);
+    border-radius: 50%;
+    transition: 0.2s;
 }
 
 /* Botões de redes sociais */
@@ -487,7 +315,7 @@ p {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #ff8400;
+    background-color: #943ade;
     font-size: 25px;
     text-align: center;
     margin: 0px 10px;
@@ -496,7 +324,7 @@ p {
 .btn-social button:hover {
     transform: scale(1.05);
     transition: 0.2s;
-    box-shadow: 0px 0px 20px #ff8400;
+    box-shadow: 0px 0px 20px #55148a;
     cursor: pointer;
 }
 
@@ -519,80 +347,9 @@ footer {
     width: 300px;
 }
 
-.logo_dev {
+.logo_ralky {
     width: 90px;
     height: 90px;
-}
-
-
-/*****************************************/
-/*      Estilo cadLoginProf.php          */
-/*****************************************/
-.interface .boxAcesso {
-    padding: 20px;
-}
-
-.box .boxAcesso h2 {
-    text-align: center;
-    color: white;
-    font-size: 25pt;
-    font-weight: bolder;
-    text-shadow: 2px 2px 2px black;
-    margin-bottom: 20px;
-}
-
-.box .boxAcesso form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.error-message {
-    color: red;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.inputbox {
-    flex: 1;
-    min-width: 300px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.inputbox input {
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-}
-
-.password-container {
-    position: relative;
-    width: 100%;
-}
-
-.password-container input {
-    width: 100%;
-    padding-right: 40px;
-}
-
-.toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-/* Estilo base para os botões sociais */
-.btn-social button {
-    color: white;
-    border-radius: 50%;
-    border: none;
-    background-color: #ff8400;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Tamanhos responsivos */
@@ -686,7 +443,7 @@ footer {
         max-height: 100px !important;
     }
 
-    .services .tesoura {
+    .services .tipoServico {
         font-size: 15px !important;
         padding: 5px;
     }
@@ -703,34 +460,6 @@ footer {
         padding: 5px;
     }
 
-    /*Seção Depoimento*/
-    .comentario {
-        background-size: cover;
-        margin: 0px 5px;
-        padding: 0px 0px;
-    }
-
-    /*Seção Quem Somos */
-    .container-quem-somos {
-        background-size: cover;
-        margin: 0px 5px;
-        flex-direction: column;
-        margin: 5px;
-    }
-
-    .img-fluid {
-        margin-top: 10px;
-    }
-
-    .container-quem {
-        width: 100%;
-    }
-
-    .container-quem p {
-        max-width: 90%;
-        font-size: 15px;
-    }
-
     /*Seção Contato*/
 
     section.contato {
@@ -739,13 +468,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 1.2em;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 1.2em;
     }
 
@@ -765,7 +494,7 @@ footer {
         font-size: 13px;
     }
 
-    .logo_dev {
+    .logo_ralky {
         width: 50px;
         height: 50px;
     }
@@ -811,34 +540,6 @@ footer {
         box-sizing: border-box;
     }
 
-    /*Seção Deopimento*/
-    .comentario {
-        background-size: cover;
-        margin: 0px 5px;
-        padding: 0px 0px;
-    }
-
-    /*Seção Quem Somos*/
-    .container-quem-somos {
-        background-size: cover;
-        margin: 0px 5px;
-        flex-direction: column;
-        margin: 5px;
-    }
-
-    .img-fluid {
-        margin-top: 10px;
-    }
-
-    .container-quem {
-        width: 100%;
-    }
-
-    .container-quem p {
-        max-width: 90%;
-        font-size: 15px;
-    }
-
     /*Seção Contato*/
     .contato {
         display: flex;
@@ -846,13 +547,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 15px;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 15px;
     }
 
@@ -873,7 +574,7 @@ footer {
         color: black;
     }
 
-    .logo_dev {
+    .logo_ralky {
         width: 70px;
         height: 70px;
     }
@@ -919,34 +620,6 @@ footer {
         box-sizing: border-box;
     }
 
-    /*Seçao Depoimento*/
-    .comentario {
-        background-size: cover;
-        margin: 0px 5px;
-        padding: 0px 0px;
-    }
-
-    /*Seção Quem Somos*/
-    .container-quem-somos {
-        background-size: cover;
-        margin: 0px 5px;
-        flex-direction: column;
-        margin: 5px;
-    }
-
-    .img-fluid {
-        margin-top: 10px;
-    }
-
-    .container-quem {
-        width: 100%;
-    }
-
-    .container-quem p {
-        max-width: 90%;
-        font-size: 15px;
-    }
-
     /*Seção Contato*/
     .contato {
         display: flex;
@@ -954,13 +627,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 15px;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 15px;
     }
 
@@ -985,7 +658,7 @@ footer {
         color: black;
     }
 
-    .logo_dev {
+    .logo_ralky {
         width: 90px;
         height: 90px;
     }
@@ -1031,40 +704,6 @@ footer {
         box-sizing: border-box;
     }
 
-    /*Seção Depoimento*/
-    .comentario {
-        background-size: cover;
-        margin: 0px 5px;
-        padding: 0px 0px;
-    }
-
-    /*Seção Quem Somos*/
-    .container-quem-somos {
-        background-size: cover;
-        margin: 0px 5px;
-        flex-direction: column;
-        margin: 5px;
-    }
-
-    .img-fluid {
-        margin-top: 10px;
-        width: 70%
-    }
-
-    .container-quem {
-        width: 100%;
-    }
-
-    .container-quem .apresentacao-quem {
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .container-quem .apresentacao-txtquem {
-        font-size: 20px;
-    }
-
     /*Seção Contato*/
     .contato {
         display: flex;
@@ -1072,13 +711,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 15px;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 15px;
     }
 
@@ -1104,7 +743,7 @@ footer {
         color: #000;
     }
 
-    .logo_dev {
+    .logo_ralky {
         width: 90px;
         height: 90px;
     }
@@ -1157,35 +796,6 @@ footer {
         margin: 0px 5px;
     }
 
-    /*Seção Depoimentos*/
-    .comentario {
-        background-size: cover;
-        margin: 0px 5px;
-        padding: 0px 0px;
-    }
-
-    /*Seção Quem Somos*/
-    .container-quem-somos {
-        background-size: cover;
-        margin: 0px 5px;
-        flex-direction: column;
-        margin: 5px;
-    }
-
-    .img-fluid {
-        margin-top: 10px;
-        width: 70%;
-    }
-
-    .container-quem {
-        width: 100%;
-    }
-
-    .container-quem p {
-        max-width: 90%;
-        font-size: 15px;
-    }
-
     /*Seção Contato*/
     .contato {
         display: flex;
@@ -1193,13 +803,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 25px;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 25px;
     }
 
@@ -1250,17 +860,6 @@ footer {
         margin: 10px 10px;
     }
 
-    /*Seção Depoimentos*/
-    .comentario {
-        background-size: cover;
-        margin: 5px 5px;
-        padding: 10px 0px;
-    }
-
-    .comentario h2 {
-        margin-bottom: 30px;
-    }
-
     /*Seção Contato*/
     .contato {
         display: flex;
@@ -1268,13 +867,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 25px;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 25px;
     }
 
@@ -1427,13 +1026,13 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosadev p {
+    .somosaralky p {
         font-size: 25px;
         line-height: 1.3;
         text-align: justify;
     }
 
-    .somosadev p span {
+    .somosaralky p span {
         font-size: 25px;
     }
 
@@ -1459,7 +1058,7 @@ footer {
         color: #000;
     }
 
-    .logo_dev {
+    .logo_ralky {
         width: 90px;
         height: 90px;
     }
