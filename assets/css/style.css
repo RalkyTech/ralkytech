@@ -26,7 +26,7 @@ span {
 /*********************************************/
 
 header {
-    background-color: rgb(51, 51, 51);
+    background-color: #030a09;
     position: fixed;
     top: 0;
     /* Posiciona a section no topo */
@@ -180,7 +180,6 @@ nav ul {
     width: 99%;
     height: 100vh;
     margin: 5px;
-    border: solid red;
 }
 
 .container-video-apresenta h1 {
@@ -233,7 +232,7 @@ nav ul {
 /* Ajuste da imagem */
 .contato .img-contato img{
     padding-top: 30px;
-    height: 150px;
+    height: 180px;
     width: 150px;
     margin-top: 0px;
 }
@@ -333,8 +332,8 @@ h5 {
 /*********************************************/
 footer {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.247);
-    color: white;
+    background-color: #030a09;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
 }
@@ -350,6 +349,14 @@ footer {
 .logo_ralky {
     width: 90px;
     height: 90px;
+}
+
+.rodape p{
+    color: #ffffff;
+}
+
+.rodape .txt_logo p{
+    color: #ffffff;
 }
 
 /* Tamanhos responsivos */
