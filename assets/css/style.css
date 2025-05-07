@@ -80,19 +80,6 @@ main{
 /*------------- Seção Banner ----------------*/
 /*********************************************/
 
-/* .banner{
-    border: 0;
-    margin: 0px 0px;
-    padding: 0px 0px;
-    background: url('../imagem/testeescuro4.jpeg') no-repeat center center/cover;
-    background-size: cover;
-    min-height: 100vh;
-    background-size: cover;
-} */
-
-
-
-
 .banner {
     margin: 0px;
     background: url('../imagem/testeescuro4.jpeg') no-repeat center center/cover;
