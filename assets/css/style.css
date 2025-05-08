@@ -1,11 +1,17 @@
 /*Inserir Fonte Local*/
 @font-face {
-    font-family: "Roboto";
-    src: url(../../assets/Roboto/Roboto-VariableFont_wdth,wght.ttf);
+    font-family: "ReadHat";
+    src: url(../fonte/RedHatText-Regular.ttf);
+  
+}
+
+@font-face {
+    font-family: "Limelight";    
+    src: url(../fonte/Limelight-Regular.ttf);
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'ReadHat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,15 +38,14 @@ header {
     /* Posiciona a section no topo */
     left: 0;
     /* Posiciona a section à esquerda */
-    width: 99%;
+    width: 100%;
     /* Faz a section ocupar toda a largura da tela */
     z-index: 1000;
-    margin: 5px;
 }
 
 header .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100vh;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,27 +67,32 @@ nav ul {
 #navbarNav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: normal;
 }
+
+main{
+    min-width: 100vh;
+}
+
 
 /*********************************************/
 /*------------- Seção Banner ----------------*/
 /*********************************************/
 
 .banner {
+    margin: 0px;
     background: url('../imagem/testeescuro4.jpeg') no-repeat center center/cover;
     color: black;
     text-align: center;
-    padding: 100px 0;
-    box-shadow: 2px 8px 10px 1px rgb(100, 100, 100);
-    margin: 5px;
+    width: 100%;
     min-height: 100vh;
     align-content: center;
+    background-size: cover;
 }
 
-
 .banner h1 {
+    font-family: 'Limelight', sans-serif;
     color: #ffffff;
 }
 
@@ -97,15 +107,14 @@ nav ul {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 5px;
     background: url('../imagem/fundoserviescuro.jpeg') no-repeat center center/cover;
     color: black;
     text-align: center;
-    padding: 100px 0;
-    box-shadow: 2px 8px 10px 1px rgb(100, 100, 100);
+    padding: 80px 0;
     margin-top: 10px;
     background-color: white;
     border: none;
+    width: 100%;
     min-height: 100vh;
     background-size: 110%;
     align-content: center;
@@ -159,14 +168,17 @@ nav ul {
 }
 
 .services h2 {
+    font-family: 'Limelight', sans-serif;
     text-align: center;
     color: white;
 }
 
 .services .tipoServico {
+    font-family: 'ReadHat', sans-serif;
     color: #000000;
-    font-size: large;
+    font-size: 2em;
     font-weight: normal;
+    margin-top: 20px;
 }
 
 /*********************************************/
@@ -177,9 +189,8 @@ nav ul {
     background-color: rgb(0, 0, 0);
     overflow: auto;
     text-align: center;
-    width: 99%;
+    width: 100%;
     height: 100vh;
-    margin: 5px;
 }
 
 .container-video-apresenta h1 {
@@ -230,12 +241,7 @@ nav ul {
 }
 
 /* Ajuste da imagem */
-.contato .img-contato img{
-    padding-top: 30px;
-    height: 180px;
-    width: 150px;
-    margin-top: 0px;
-}
+
 
 section.contato .txt-contato {
     margin-top: -20px;
@@ -336,6 +342,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
+    width: 100%;
 }
 
 .rodape {
@@ -420,8 +427,8 @@ footer {
     .services {
         background-size: cover;
         display: flex;
-        margin: 5px 5px;
-        padding: 0px 0px;
+        /* margin: 5px 5px; */
+        /* padding: 0px 0px; */
     }
 
     section.services .container h2 {
@@ -525,7 +532,7 @@ footer {
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        margin: 5px 5px;
+        /* margin: 5px 5px; */
     }
 
     .services .container h2 {
@@ -605,7 +612,7 @@ footer {
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        margin: 5px 5px;
+        /* margin: 5px 5px; */
     }
 
     .services .container h2 {
@@ -653,7 +660,7 @@ footer {
     /*Seção Rodape*/
     footer {
         margin: 0px 0px;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .rodape {
@@ -689,7 +696,7 @@ footer {
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        margin: 5px 5px;
+        /* margin: 5px 5px; */
     }
 
     .services .container h2 {
@@ -738,7 +745,7 @@ footer {
 
     footer {
         margin: 0px 0px;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .rodape {
@@ -774,7 +781,7 @@ footer {
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        margin: 5px 5px;
+        /* margin: 5px 5px; */
         width: 100%;
     }
 
@@ -829,7 +836,7 @@ footer {
     /*Seçção Rodape*/
     footer {
         margin: 0px 0px;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .rodape {
@@ -854,7 +861,7 @@ footer {
     /*Seção Serviços*/
     .services {
         margin: 0px 0px;
-        margin: 5px;
+        /* margin: 5px; */
         background-size: cover;
     }
 
@@ -893,7 +900,7 @@ footer {
     /*Seçção Rodape*/
     footer {
         margin: 0px 0px;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .rodape {
@@ -920,8 +927,8 @@ footer {
     .banner {
         margin: 0px 0px;
         padding: 0px 0px;
-        margin: 5px;
-        border: solid white;
+        /* margin: 5px; */
+        /* border: solid white; */
     }
 
     .banner h1 {
@@ -944,7 +951,7 @@ footer {
         /* margin: 5pc 5px; */
         width: 100%;
         justify-content: center;
-        border: solid white;
+        /* border: solid white; */
 
     }
 
@@ -990,41 +997,6 @@ footer {
         padding: 5px;
     }
 
-    /*Seção Depoimentos*/
-    .comentario {
-        margin: 0px 0px;
-        padding: 0px 0px;
-        background-size: cover;
-        margin: 5px 5px;
-        padding: 25px 0px;
-    }
-
-    .comentario h2 {
-        font-size: 3em;
-        margin-bottom: 25px;
-    }
-
-    /*Seção Quem Somos*/
-    .container-quem-somos {
-        background-size: cover;
-        margin: 0px 5px;
-        flex-direction: column;
-    }
-
-    .container-quem {
-        width: 100%;
-    }
-
-    .container-quem .apresentacao-quem {
-        width: 100%;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .container-quem .apresentacao-txtquem {
-        font-size: 25px;
-    }
-
     /*Seção Contato*/
 
     .contato {
@@ -1053,7 +1025,7 @@ footer {
 
     footer {
         margin: 0px 0px;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .rodape{
