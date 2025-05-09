@@ -47,12 +47,14 @@ header .container {
     width: 100vh;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    justify-self: center;
     height: 100px;
 }
 
 #logo {
+
     height: 80px;
     width: 80px;
 }
@@ -67,7 +69,7 @@ nav ul {
 #navbarNav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: normal;
 }
 
@@ -199,7 +201,7 @@ main{
     padding-top: 100px;
 }
 
-.apresenta {
+/* .apresenta {
     float: center;
     background-image: url(../imagem/tela-video-transp.png);
     background-repeat: no-repeat;
@@ -208,7 +210,7 @@ main{
     height: 435px;
     padding: 10px;
     justify-self: center;
-}
+} */
 
 
 .container-video-apresenta h4 {
@@ -233,40 +235,37 @@ main{
     width: 100%;
     min-height: 100vh;
     /* Ocupa toda a altura da tela */
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: url('../imagem/fc2.jpeg') no-repeat center center/cover;
 }
 
-/* Ajuste da imagem */
-
-
 section.contato .txt-contato {
-    margin-top: -20px;
+    font-family: 'ReadHat', sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-left: -650px;
     width: 50%;
 }
 
-section.contato .txt-contato p {
-    text-align: justify;
-    font-weight: normal;
-}
-
-section.contato .txt-contato .somosaralky p {
+section.contato h2{
+    font-family: 'Limelight', sans-serif;
     text-align: center;
     font-size: 35px;
     line-height: 40px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: -650px;
+    color: #ffffff;
 }
 
-section.contato .txt-contato .somosaralky p span {
-    font-size: 35px;
-    display: block;
-}
 
 /* Estilizando o texto */
-h1 {
+/* h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -282,28 +281,144 @@ h5 {
     text-align: center;
     width: 100px;
     padding: 10px;
-}
+} */
 
+/* Estilos para os cards da equipe */
 .equipe {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    perspective: 1000px;
+    margin: 40px 0;
+    margin-left: -650px;
 }
 
-.equipe img {
-    border-radius: 50%;
+.team-card {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    cursor: pointer;
 }
 
-.equipe img:hover {
-    box-shadow: 0px 0px 30px #943ade;
-    transform: scale(1.1);
-    border-radius: 50%;
-    transition: 0.2s;
+.team-card.flipped {
+    transform: rotateY(180deg);
 }
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.team-card-front, .team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-card-front {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.team-card-back {
+    background-color: #943ade;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.team-card img {
+    
+    width: 150px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 0px;
+    /* border: 3px solid #943ade; */
+    box-shadow: ;
+}
+
+.team-card h5 {
+    color: #333;
+    margin: 0;
+    font-size: 16px;
+}
+
+.team-card-back p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.team-social {
+    display: flex;
+    gap: 15px;
+}
+
+.team-social a {
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+    color: #38fedd;
+    transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .equipe {
+        gap: 15px;
+    }
+    
+    .team-card {
+        width: 120px;
+        height: 170px;
+    }
+    
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .team-card h5 {
+        font-size: 14px;
+    }
+    
+    .team-card-back p {
+        font-size: 12px;
+    }
+    
+    .team-social {
+        gap: 10px;
+    }
+    
+    .team-social a {
+        font-size: 16px;
+    }
+}
+
 
 /* Botões de redes sociais */
+.btn-social{
+    margin-left: -650px;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -495,7 +610,7 @@ footer {
     .txtApres {
         text-align: justify;
         width: 90%;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     /* Seção Rodapé */
@@ -917,7 +1032,7 @@ footer {
 
 
     .logo {
-        /* margin-left: -50px; */
+        margin-left: -50px;
         height: 40px;
         width: auto;
     }
@@ -927,8 +1042,7 @@ footer {
     .banner {
         margin: 0px 0px;
         padding: 0px 0px;
-        /* margin: 5px; */
-        /* border: solid white; */
+        
     }
 
     .banner h1 {

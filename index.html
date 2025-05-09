@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralky Tech Soluções</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/imagem/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Alterado para Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ralky Tech Soluções</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="icon" href="./assets/imagem/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Alterado para Bootstrap 5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <div class="container">
-            <img id="logo" src="./assets/imagem/logo1.png" alt="logo">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#banner">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projeto">Projeto Revest</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <body>
+        <header>
+            <div class="container">
+                <img id="logo" src="./assets/imagem/logo-topo.png" alt="logo">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#banner">Home</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#services">Serviços</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#projeto">Projeto Revest</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <section class="banner" id="banner">
-            <h1>Bem-vindo à Ralky Tech</h1></br>
+        <main>
+            <section class="banner" id="banner">
+                <h1>Bem-vindo à Ralky Tech</h1></br>
             <h3>Sua parceira em tecnologia.</h3>
         </section>
 
@@ -46,111 +55,204 @@
                 <h2>Nossas Especialidades</h2>
                 <div class="row">
                     <div class="service-item col-6 col-lg-4">
-                        <img class="imagem" src="./assets/imagem/website.jpeg" alt="Serviço 1">
+                        <img class="imagem" src="./assets/imagem/website.jpeg"
+                            alt="Serviço 1">
                         <p class="tipoServico">Web Site</p>
                     </div>
                     <div class="service-item col-6 col-lg-4">
-                        <img class="imagem" src="./assets/imagem/prototipo.jpeg" alt="Serviço 2">
+                        <img class="imagem" src="./assets/imagem/prototipo.jpeg"
+                            alt="Serviço 2">
                         <p class="tipoServico">Prototipação</p>
                     </div>
                     <div class="service-item col-6 col-lg-4">
-                        <img class="imagem" src="./assets/imagem/webMobile.jpeg" alt="Serviço 3">
+                        <img class="imagem" src="./assets/imagem/webMobile.jpeg"
+                            alt="Serviço 3">
                         <p class="tipoServico">Aplicações Web e Mobile</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <section class="container-video-apresenta" id="projeto">
             <h1>Conheça o Projeto Revest Kids</h1>
             <h4>Ajuste o volume do seu aparelho e de play no video!<h4>
-            <article class="apresenta">
-                <video id="meuVideo" controls>
-                    <source src="./assets/video/videoplayback.mp4" type="video/mp4">
-                    Seu navegador não suporta o elemento de vídeo.
-                </video>
-            </article>
-        </section>
+                    <article class="apresenta">
+                        <video id="meuVideo" controls>
+                            <source src="./assets/video/videoplayback.mp4"
+                                type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </article>
+                </section>
 
-        <section class="contato" id="contato">        
-            <h2 class="somosaralky"><span>Somos a Ralky Tech </span></h2>
-
-            <p class="txtApres">
-                A <span>ralky tech</span> é formada por talentosos alunos do curso de desenvolvimento de
-                sistema em multiplataforma da <span>Faculdade de Técnologia - Fatec/Registro</span>, unidos pela paixão por tecnologia e inovação.
-            </p>
-
-            <p class="txtApres">
-                Especializados em <span>desenvolvimento web</span>, estamos no mercado desde
-                <span>2025</span>,  criando soluções digitais sob medida para empresas e empreendedores. 
-                Nossa equipe aplica as mais  avançadas técnicas e <span>BOAS PRÁTICAS</span> do setor para desenvolver aplicações web <span>criativas</span>, <span>inovadoras</span> e altamente funcionais.
-            </p>
-
-            <p class="txtApres">
-                Se você busca uma aplicação web ou um site profissional, moderno e totalmente personalizado, a <span>Ralky Tech</span> está pronta para transformar sua ideia em realidade. <strong><br>Entre em contato e leve sua presença digital para o próximo nível!</strong>
-            </p>
-
-            <div class="equipe">
-                <div>
-                    <img src="./assets/imagem/camila104x104.png" alt="foto camila">
-                    <h5>Camila <br>Web Designer</h5>
-
-                </div>
-                <div>
-                    <img src="./assets/imagem/felipe104x104.png" alt="foto Felipe">
-                    <h5>Felipe<br>Hardware</h5>
-                </div>
-                <div>
-                    <img src="./assets/imagem/Kaio104x104.png" alt="Foto Kaio">
-                    <h5>Kaio<br>Hardware</h5>   
-                </div>
-                <div>
-                    <img src="./assets/imagem/Ricardo104x104.png" alt="Foto Ricardo">
-                    <h5>Ricardo<br>Comercial</h5>
-                </div>
-                <div>
-                    <img src="./assets/imagem/rogerio104x104.png" alt="Foto Rogerio">
-                    <h5>Rogério<br>Front End</h5>
-                </div>
-            </div>
-
-            <div class="btn-social">
-                <a href="https://www.instagram.com/ralkytech" target="_blank"><button><i
-                            class="rede fa-brands fa-instagram"></i></button></a>
-
-                <a href="https://www.linkedin.com/company/ralky-tech/?viewAsMember=true"
-                target="_blank"><button><i
-                            class="fa-brands fa-linkedin"></i></button></a>
-
-
-                <a href="https://github.com/RalkyTech"
-                target="_blank"><button><i
-                            class="fa-brands fa-github"></i></button></a>
-
-                <a href="mailto:ralkytech@gmail.com" target="_blank"><button><i
-                            class="fas fa-envelope"></i></button></a>
-            </div> <!-- Fim btn-social -->
-
-        </section>
-    </main>
-
-    <footer>
-        <div class="rodape">
-            <div>
-                <img class="logo_ralky" src="./assets/imagem/logo_ralky-semfundo.png" alt="logo empresa">
-            </div>
-            <p id="texto">&copy; 2025 Plataforma de Web Designer. <br>Todos os direitos reservados.</p>
-            <div class="txt_logo">
-                <p>Design By <span>Ralky Tech</span></p>
-            </div>
-        </div>
-    </footer>
-
+                <section class="contato" id="contato">
+                    <h2 class="somosaralky">Somos a Ralky Tech</h2>
+                
+                        <p class="txt-contato">
+                            A Ralky Tech é formada por talentosos
+                            alunos do curso de desenvolvimento de
+                            sistema em multiplataforma da Faculdade de
+                            Técnologia - Fatec/Registro, unidos pela
+                            paixão por tecnologia e inovação.
+                        </p>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                        <p class="txt-contato">
+                            Especializados em desenvolvimento web,
+                            estamos no mercado desde
+                            2025, criando soluções digitais sob medida
+                            para empresas e empreendedores.
+                            Nossa equipe aplica as mais avançadas técnicas e
+                            BOAS PRÁTICAS do setor para desenvolver
+                            aplicações web criativas,
+                            inovadoras e altamente funcionais.
+                        </p>
+    
+                        <p class="txt-contato">
+                            Se você busca uma aplicação web ou um site profissional,
+                            moderno e totalmente personalizado, a Ralky
+                                Tech está pronta para transformar sua ideia
+                            em realidade. <strong><br>Entre em contato e leve sua
+                                presença digital para o próximo nível!</strong>
+                        </p>
 
-    <script>
+                    <div class="equipe">
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <img src="./assets/imagem/camila100x100.png"
+                                        alt="foto camila">
+                                    <!-- <h5>Click</h5> -->
+                                </div>
+                                <div class="team-card-back">
+                                    <p>Camila Machado
+                                        Designer Grafico UX/UI</p>
+                                    <div class="team-social">
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <img src="./assets/imagem/felipe100x100.png"
+                                        alt="foto Felipe">
+                                    <!-- <h5>click</h5> -->
+                                </div>
+                                <div class="team-card-back">
+                                    <p>Felipe Guedes
+                                        Desenvolvedor Backend</p>
+                                    <div class="team-social">
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <img src="./assets/imagem/Kaio100x100.png"
+                                        alt="Foto Kaio">
+                                    <h5>Kaio</h5>
+                                </div>
+                                <div class="team-card-back">
+                                    <p>Kaio Toshiyuki
+                                        Suporte Hardware</p>
+                                    <div class="team-social">
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <img
+                                        src="./assets/imagem/Ricardo100x100.jpg"
+                                        alt="Foto Ricardo">
+                                    <h5>Ricardo</h5>
+                                </div>
+                                <div class="team-card-back">
+                                    <p>Ricardo Sugano
+                                        Desenvolvedor Full Stack</p>
+                                    <div class="team-social">
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card-inner">
+                                <div class="team-card-front">
+                                    <img
+                                        src="./assets/imagem/rogerio100x100.jpg"
+                                        alt="Foto Rogerio">
+                                    <h5>Rogério</h5>
+                                </div>
+                                <div class="team-card-back">
+                                    <p>Rogério Toledo
+                                        Desenvolvedor Frontend</p>
+                                    <div class="team-social">
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/ralkytech"
+                            target="_blank"><button><i
+                                    class="rede fa-brands fa-instagram"></i></button></a>
+
+                        <a
+                            href="https://www.linkedin.com/company/ralky-tech/?viewAsMember=true"
+                            target="_blank"><button><i
+                                    class="fa-brands fa-linkedin"></i></button></a>
+
+                        <a href="https://github.com/RalkyTech"
+                            target="_blank"><button><i
+                                    class="fa-brands fa-github"></i></button></a>
+
+                        <a href="mailto:ralkytech@gmail.com"
+                            target="_blank"><button><i
+                                    class="fas fa-envelope"></i></button></a>
+                    </div> <!-- Fim btn-social -->
+
+                </section>
+            </main>
+
+            <footer>
+                <div class="rodape">
+                    <div>
+                        <img class="logo_ralky"
+                            src="./assets/imagem/logo_ralky-semfundo.png"
+                            alt="logo empresa">
+                    </div>
+                    <p id="texto">&copy; 2025 Plataforma de Web Designer.
+                        <br>Todos os direitos reservados.</p>
+                    <div class="txt_logo">
+                        <p>Design By <span>Ralky Tech</span></p>
+                    </div>
+                </div>
+            </footer>
+
+            <script>
         // JavaScript puro para o menu mobile
         document.addEventListener('DOMContentLoaded', function() {
             const toggler = document.querySelector('.navbar-toggler');
@@ -173,6 +275,35 @@
             });
         });
     </script>
-</body>
 
-</html>
+            <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const teamCards = document.querySelectorAll('.team-card');
+        
+        teamCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Se o card clicado já está virado, desvira ele
+                if (this.classList.contains('flipped')) {
+                    this.classList.remove('flipped');
+                } else {
+                    // Primeiro desvira todos os outros cards
+                    teamCards.forEach(c => c.classList.remove('flipped'));
+                    // Depois vira o card clicado
+                    this.classList.add('flipped');
+                }
+            });
+        });
+        
+        // Opcional: Fechar o card ao clicar fora
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.team-card')) {
+                teamCards.forEach(card => {
+                    card.classList.remove('flipped');
+                });
+            }
+        });
+    });
+</script>
+        </body>
+
+    </html>
