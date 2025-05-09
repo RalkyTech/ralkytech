@@ -469,18 +469,11 @@ footer {
         background: url('../imagem/testeescuro4.jpeg') no-repeat center center/cover;
         color: black;
         text-align: center;
-        width: 50%;
+        width: 100%;
         min-height: 100vh;
         align-content: center;
         background-size: cover;
     }
-
-    /* .banner {
-        width: 50%;
-        height: ;
-        margin: 0;
-        border: 0;
-    } */
 
     .banner h3 {
         font-size: 15px;
@@ -488,38 +481,9 @@ footer {
 
     /*Seção Serviços*/
     .services {
+        margin: 0px;
         background-size: cover;
         display: flex;
-    }
-
-    section.services .container h2 {
-        margin-top: 15px;
-        width: 100%;
-    }
-
-    .services .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .service-item {
-        flex: 0 0 80% !important;
-        max-width: 70% !important;
-        padding: 5px;
-        box-sizing: border-box;
-    }
-
-    .imagem {
-        width: 95% !important;
-        height: 90% !important;
-        max-height: 100px !important;
-    }
-
-    .services .tipoServico {
-        font-size: 15px !important;
-        padding: 5px;
     }
 
     /* Remove margens e padding conflitantes */
@@ -528,10 +492,60 @@ footer {
         margin: 0 !important;
     }
 
-    /* Garante que as linhas não tenham espaçamento extra */
-    .row {
+    section.services .container h2 {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .services .row {
         margin: 0px !important;
         padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .service-item {
+        flex: 0 0 80% !important;
+        max-width: 60% !important;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .imagem {
+        width: 90% !important;
+        height: 80% !important;
+        max-height: 100px !important;
+    }
+
+    .services .tipoServico {
+        font-size: 15px !important;
+        padding: 5px;
+    }
+
+    /*Seção Video*/
+
+    .container-video-apresenta {
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .container-video-apresenta h1 {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .container-video-apresenta h4 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #meuVideo {
+        justify-content: center;
+        width: 400px;
+        height: 180px;
+
     }
 
     /*Seção Contato*/
@@ -542,16 +556,36 @@ footer {
         margin: 0px 0px;
     }
 
-    .contato h2 {
-        font-size: 1.2em;
+    section.contato h2 {
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: -100px;
+        /* font-size: 1.2em;
         line-height: 1.3;
-        text-align: justify;
+        text-align: justify; */
     }
 
-    .txt-contato {
+    section.contato .txt-contato {
+        margin: 0px;
+        margin-left: -100px;
         text-align: justify;
-        width: 90%;
+        width: 70%;
         font-size: 12px;
+    }
+
+    .equipe{
+        margin: 0px;
+    }
+
+    .team-card{
+        flex-direction: row;
+       
+    }
+
+    .team-card img {
+        width: 150px;
+        height: 300px;
+
     }
 
     /* Seção Rodapé */
