@@ -30,11 +30,8 @@ header {
     background-color: #030a09;
     position: fixed;
     top: 0;
-    /* Posiciona a section no topo */
     left: 0;
-    /* Posiciona a section à esquerda */
     width: 100%;
-    /* Faz a section ocupar toda a largura da tela */
     z-index: 1000;
 }
 
@@ -119,12 +116,9 @@ main {
 
 .services .container {
     display: flex;
-    flex-wrap: wrap;
-    /* Permite que os itens se ajustem à largura disponível */
+    flex-wrap: wrap; 
     gap: 20px;
-    /* Espaçamento entre as colunas */
     justify-content: space-between;
-    /* Garante que os itens fiquem distribuídos de forma equitativa */
     align-items: center;
     align-content: center;
 }
