@@ -2,11 +2,11 @@
 @font-face {
     font-family: "ReadHat";
     src: url(../fonte/RedHatText-Regular.ttf);
-  
+
 }
 
 @font-face {
-    font-family: "Limelight";    
+    font-family: "Limelight";
     src: url(../fonte/Limelight-Regular.ttf);
 }
 
@@ -15,11 +15,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-span {
-    color: #943ade;
-    font-weight: normal;
 }
 
 .service-item img {
@@ -73,7 +68,7 @@ nav ul {
     font-weight: normal;
 }
 
-main{
+main {
     min-width: 100vh;
 }
 
@@ -156,6 +151,14 @@ main{
     /* Aumenta a sombra para dar a impressão de flutuação */
 }
 
+.services .service-item a {
+    text-decoration: none;
+}
+
+.services .service-item a:hover {
+    text-decoration: none;
+}
+
 .services img {
     width: 100%;
     /* Ajusta a largura para 100% do contêiner */
@@ -196,22 +199,11 @@ main{
 }
 
 .container-video-apresenta h1 {
-    color: white;
+    font-family: 'Limelight', sans-serif;
     text-align: center;
+    color: white;
     padding-top: 100px;
 }
-
-/* .apresenta {
-    float: center;
-    background-image: url(../imagem/tela-video-transp.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 740px;
-    height: 435px;
-    padding: 10px;
-    justify-self: center;
-} */
-
 
 .container-video-apresenta h4 {
     color: white;
@@ -221,7 +213,7 @@ main{
 #meuVideo {
     justify-content: center;
     width: 850px;
-    height:380px;
+    height: 380px;
     margin-top: 19px;
     margin-left: -48px;
     z-index: 1000;
@@ -253,7 +245,7 @@ section.contato .txt-contato {
     width: 50%;
 }
 
-section.contato h2{
+section.contato h2 {
     font-family: 'Limelight', sans-serif;
     text-align: center;
     font-size: 35px;
@@ -262,26 +254,6 @@ section.contato h2{
     margin-left: -650px;
     color: #ffffff;
 }
-
-
-/* Estilizando o texto */
-/* h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-
-h5 {
-    color: #fff;
-    text-align: center;
-    width: 100px;
-    padding: 10px;
-} */
 
 /* Estilos para os cards da equipe */
 .equipe {
@@ -316,7 +288,8 @@ h5 {
     transform-style: preserve-3d;
 }
 
-.team-card-front, .team-card-back {
+.team-card-front,
+.team-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -342,13 +315,11 @@ h5 {
 }
 
 .team-card img {
-    
     width: 150px;
     height: 300px;
     border-radius: 10%;
     object-fit: cover;
     margin-bottom: 0px;
-    /* border: 3px solid #943ade; */
     box-shadow: ;
 }
 
@@ -380,42 +351,8 @@ h5 {
     transform: scale(1.2);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .equipe {
-        gap: 15px;
-    }
-    
-    .team-card {
-        width: 120px;
-        height: 170px;
-    }
-    
-    .team-card img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .team-card h5 {
-        font-size: 14px;
-    }
-    
-    .team-card-back p {
-        font-size: 12px;
-    }
-    
-    .team-social {
-        gap: 10px;
-    }
-    
-    .team-social a {
-        font-size: 16px;
-    }
-}
-
-
 /* Botões de redes sociais */
-.btn-social{
+.btn-social {
     margin-left: -650px;
 }
 
@@ -473,11 +410,11 @@ footer {
     height: 90px;
 }
 
-#texto{
+#texto {
     color: #ffffff;
 }
 
-.rodape .txt_logo p{
+.rodape .txt_logo p {
     color: #ffffff;
 }
 
@@ -542,8 +479,9 @@ footer {
     .services {
         background-size: cover;
         display: flex;
-        /* margin: 5px 5px; */
-        /* padding: 0px 0px; */
+        margin: 0px 0px;
+        padding: 0px 0px;
+        border: 0px;
     }
 
     section.services .container h2 {
@@ -564,6 +502,7 @@ footer {
         max-width: 70% !important;
         padding: 5px;
         box-sizing: border-box;
+        margin-bottom: 10px;
     }
 
     .imagem {
@@ -577,16 +516,27 @@ footer {
         padding: 5px;
     }
 
-    /* Remove margens e padding conflitantes */
     .services .container {
         padding: 0 5px !important;
         margin: 0 !important;
     }
 
-    /* Garante que as linhas não tenham espaçamento extra */
     .row {
         margin: 0px !important;
         padding: 5px;
+    }
+
+    /*Seção Video*/
+
+    .container-video-apresenta {
+        width: 100vh;
+        height: 100%;
+    }
+
+    #meuVideo {
+        width: 400px;
+        height: 200px;
+        margin-left: 5px;
     }
 
     /*Seção Contato*/
@@ -597,35 +547,67 @@ footer {
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 1.2em;
-        line-height: 1.3;
-        text-align: justify;
+    section.contato h2 {
+        margin: 0px;
     }
 
-    .somosaralky p span {
-        font-size: 1.2em;
-    }
-
-    .txtApres {
+    section.contato .txt-contato {
+        margin: 0px;
         text-align: justify;
         width: 90%;
         font-size: 12px;
+        margin-left: 0px;
     }
 
-    /* Seção Rodapé */
+    .equipe {
+        gap: 15px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .team-card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card-back p {
+        font-size: 7px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+    }
+
+
+    footer {
+        width: 550px;
+    }
 
     .rodape {
         width: 100%;
     }
 
-    .rodape P {
-        font-size: 13px;
-    }
-
     .logo_ralky {
         width: 50px;
         height: 50px;
+    }
+
+    .txt_logo P {
+        font-size: 13px;
+
     }
 
 }
@@ -634,6 +616,9 @@ footer {
 
     /*Seção Banner*/
     .banner {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
         background-size: cover;
     }
 
@@ -644,10 +629,12 @@ footer {
 
     /*Seção Serviços*/
     .services {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        /* margin: 5px 5px; */
     }
 
     .services .container h2 {
@@ -667,45 +654,93 @@ footer {
         max-width: 70% !important;
         padding: 5px;
         box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    /*Seção Video*/
+
+    .container-video-apresenta {
+        width: 100vh;
+        height: 100%;
+    }
+
+    #meuVideo {
+        width: 400px;
+        height: 200px;
+        margin-left: 5px;
     }
 
     /*Seção Contato*/
-    .contato {
+
+    section.contato {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 15px;
-        line-height: 1.3;
-        text-align: justify;
+    section.contato h2 {
+        margin: 0px;
+        margin-left: -120px;
     }
 
-    .somosaralky p span {
-        font-size: 15px;
-    }
-
-    .txtApres {
+    section.contato .txt-contato {
+        margin: 0px;
         text-align: justify;
         width: 90%;
-        font-size: 15px;
+        font-size: 12px;
+        margin-left: 0px;
+        width: 60%;
+        margin-left: -120px;
     }
 
-    /*Seção Rodape*/
+    .equipe {
+        gap: 15px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .team-card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card-back p {
+        font-size: 7px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+    }
+
+
+    footer {
+        width: 550px;
+    }
 
     .rodape {
         width: 100%;
     }
 
-    .rodape P {
-        font-size: 13px;
-        color: black;
+    .logo_ralky {
+        width: 50px;
+        height: 50px;
     }
 
-    .logo_ralky {
-        width: 70px;
-        height: 70px;
+    .txt_logo P {
+        font-size: 13px;
     }
 
 }
@@ -714,6 +749,9 @@ footer {
 
     /*Seção Banner*/
     .banner {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
         background-size: cover;
     }
 
@@ -724,10 +762,10 @@ footer {
 
     /*Seção Serviços*/
     .services {
+        margin: 0px;
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        /* margin: 5px 5px; */
     }
 
     .services .container h2 {
@@ -747,51 +785,104 @@ footer {
         max-width: 70% !important;
         padding: 5px;
         box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    /*Seção Video*/
+
+    .container-video-apresenta {
+        width: 100vh;
+        height: 100%;
+    }
+
+    .container-video-apresenta h1 {
+        font-size: 1.5em;
+    }
+
+    .container-video-apresenta h4 {
+        font-size: 1em;
+    }
+
+    #meuVideo {
+        width: 400px;
+        height: 200px;
+        margin-left: 5px;
     }
 
     /*Seção Contato*/
-    .contato {
+
+    section.contato {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 15px;
-        line-height: 1.3;
-        text-align: justify;
+    section.contato h2 {
+        margin: 0px;
+        font-size: 1.5em;
+        margin-left: -120px;
     }
 
-    .somosaralky p span {
-        font-size: 15px;
-    }
-
-    .txtApres {
+    section.contato .txt-contato {
+        margin: 0px;
         text-align: justify;
         width: 90%;
-        font-size: 15px;
+        font-size: 12px;
+        margin-left: 0px;
+        width: 60%;
+        margin-left: -120px;
     }
 
-    /*Seção Rodape*/
+    .equipe {
+        gap: 10px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .team-card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card-back p {
+        font-size: 7px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+    }
+
+    /*Seção Footer*/
+
     footer {
-        margin: 0px 0px;
-        /* margin: 5px; */
+        width: 550px;
     }
 
     .rodape {
         width: 100%;
     }
 
-    .rodape p {
-        font-size: 18px;
-        color: black;
-    }
-
     .logo_ralky {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
     }
 
+    .txt_logo P {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -808,10 +899,10 @@ footer {
 
     /*Seção Serviços*/
     .services {
+        margin: 0px;
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        /* margin: 5px 5px; */
     }
 
     .services .container h2 {
@@ -831,55 +922,98 @@ footer {
         max-width: 60% !important;
         padding: 5px;
         box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    /*Seção Video*/
+
+    #meuVideo {
+        width: 800px;
+        height: 350px;
+        margin-left: 5px;
     }
 
     /*Seção Contato*/
-    .contato {
+
+    section.contato {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 15px;
-        line-height: 1.3;
-        text-align: justify;
+    section.contato h2 {
+        margin: 0px;
+        font-size: 1.5em;
+        margin-left: -200px;
     }
 
-    .somosaralky p span {
-        font-size: 15px;
-    }
-
-    .txtApres {
+    section.contato .txt-contato {
+        margin: 0px;
         text-align: justify;
         width: 90%;
-        font-size: 15px;
+        font-size: 12px;
+        margin-left: 0px;
+        width: 50%;
+        margin-left: -200px;
     }
 
-    /*Seção Rodape*/
-
-    footer {
-        margin: 0px 0px;
-        /* margin: 5px; */
+    .equipe {
+        gap: 10px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: -200px;
     }
 
-    .rodape {
-        width: 100%;
+    .team-card {
+        width: 100px;
+        height: 140px;
     }
 
-    .rodape p {
-        font-size: 15px;
-        color: #000;
+    .team-card img {
+        width: 100px;
+        height: 200px;
+    }
+
+    .team-card-back p {
+        font-size: 10px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+        margin-left: -200px;
+    }
+
+    /*Seção Footer*/
+
+    footer{
+        justify-content: center;
+     
     }
 
     .logo_ralky {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
     }
 
+    .txt_logo P {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    nav ul{
+        width: max-content;
+        gap: 10px;
+    }
 
     /*Seção Banner*/
     .banner {
@@ -893,10 +1027,10 @@ footer {
 
     /*Seção Serviços*/
     .services {
+        margin: 0px;
         background-size: cover;
         display: flex;
         padding: 10px 10px;
-        /* margin: 5px 5px; */
         width: 100%;
     }
 
@@ -914,7 +1048,6 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-
     }
 
     .service-item {
@@ -926,32 +1059,59 @@ footer {
     }
 
     /*Seção Contato*/
-    .contato {
+    section.contato {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 25px;
-        line-height: 1.3;
-        text-align: justify;
+    .contato .somosaralky{
+        margin: 0px;
+        margin-left: -350px;
     }
 
-    .somosaralky p span {
-        font-size: 25px;
+    section.contato .txt-contato{
+        margin: 0px;
+        margin-left: -350px;
     }
 
-    .txtApres {
-        text-align: justify;
-        width: 90%;
-        font-size: 20px;
+    .equipe {
+        gap: 10px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: -350px;
+    }
+
+    .team-card {
+        width: 100px;
+        height: 140px;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 200px;
+    }
+
+    .team-card-back p {
+        font-size: 10px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+        margin-left: -350px;
     }
 
     /*Seçção Rodape*/
     footer {
         margin: 0px 0px;
-        /* margin: 5px; */
     }
 
     .rodape {
@@ -967,8 +1127,12 @@ footer {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 
+      nav ul{
+        width: max-content;
+        gap: 10px;
+    }
+
     .logo {
-        /* margin-left: -50px; */
         height: 40px;
         width: auto;
     }
@@ -976,7 +1140,6 @@ footer {
     /*Seção Serviços*/
     .services {
         margin: 0px 0px;
-        /* margin: 5px; */
         background-size: cover;
     }
 
@@ -988,34 +1151,61 @@ footer {
     .row .service-item {
         margin: 10px 10px;
     }
-
+    
     /*Seção Contato*/
-    .contato {
+    section.contato {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 25px;
-        line-height: 1.3;
-        text-align: justify;
+    .contato .somosaralky{
+        margin: 0px;
+        margin-left: -350px;
     }
 
-    .somosaralky p span {
-        font-size: 25px;
+    section.contato .txt-contato{
+        margin: 0px;
+        margin-left: -350px;
     }
 
-    .txtApres {
-        text-align: justify;
-        width: 90%;
-        font-size: 20px;
+    .equipe {
+        gap: 10px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: -350px;
+    }
+
+    .team-card {
+        width: 100px;
+        height: 140px;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 200px;
+    }
+
+    .team-card-back p {
+        font-size: 10px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+        margin-left: -350px;
     }
 
     /*Seçção Rodape*/
     footer {
         margin: 0px 0px;
-        /* margin: 5px; */
     }
 
     .rodape {
@@ -1042,7 +1232,7 @@ footer {
     .banner {
         margin: 0px 0px;
         padding: 0px 0px;
-        
+
     }
 
     .banner h1 {
@@ -1061,11 +1251,9 @@ footer {
         display: flex;
         background-size: cover;
         display: flex;
-        /* padding: 10px 10px; */
-        /* margin: 5pc 5px; */
         width: 100%;
         justify-content: center;
-        /* border: solid white; */
+
 
     }
 
@@ -1111,49 +1299,69 @@ footer {
         padding: 5px;
     }
 
+   
     /*Seção Contato*/
-
-    .contato {
+    section.contato {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
     }
 
-    .somosaralky p {
-        font-size: 25px;
-        line-height: 1.3;
-        text-align: justify;
+    .contato .somosaralky{
+        margin: 0px;
+        margin-left: -350px;
     }
 
-    .somosaralky p span {
-        font-size: 25px;
+    section.contato .txt-contato{
+        margin: 0px;
+        margin-left: -350px;
     }
 
-    .txtApres {
-        text-align: justify;
-        width: 90%;
-        font-size: 25px;
+    .equipe {
+        gap: 10px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: -350px;
     }
 
-    /*Seção Rodape*/
+    .team-card {
+        width: 100px;
+        height: 140px;
+    }
 
+    .team-card img {
+        width: 100px;
+        height: 200px;
+    }
+
+    .team-card-back p {
+        font-size: 10px;
+    }
+
+    .team-social {
+        gap: 5px;
+    }
+
+    .team-social a {
+        font-size: 16px;
+    }
+
+    .btn-social {
+        margin: 0px;
+        margin-left: -350px;
+    }
+
+    /*Seçção Rodape*/
     footer {
         margin: 0px 0px;
-        /* margin: 5px; */
     }
 
-    .rodape{
+    .rodape {
         width: 100%;
     }
 
     .rodape p {
-        font-size: 25px;
+        font-size: 15px;
         color: #000;
     }
-
-    .logo_ralky {
-        width: 90px;
-        height: 90px;
-    }
-
 }
