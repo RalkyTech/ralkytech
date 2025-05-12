@@ -35,34 +35,50 @@ header {
     z-index: 1000;
 }
 
-header .container {
-    width: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-self: center;
-    height: 100px;
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    padding: 0;
 }
 
 #logo {
-
     height: 80px;
     width: 80px;
 }
 
-nav ul {
-    position: relative;
-    list-style: none;
-    display: flex;
-    gap: 50px;
+.navbar-nav {
+    gap: 20px;
 }
 
-#navbarNav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18pt;
-    font-weight: normal;
+.nav-link {
+    font-size: 18px;
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #943ade !important;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #030a09;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+    }
+    
+    #logo {
+        height: 60px;
+        width: 60px;
+    }
 }
 
 main {
@@ -75,6 +91,8 @@ main {
 /*********************************************/
 
 .banner {
+    border: opx;
+    padding: 0px;
     margin: 0px;
     background: url('../imagem/testeescuro4.jpeg') no-repeat center center/cover;
     color: black;
@@ -461,6 +479,10 @@ footer {
 
     /*Seção Banner*/
     .banner {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        width: 550px;
         background-size: cover;
     }
 
@@ -476,6 +498,7 @@ footer {
         margin: 0px 0px;
         padding: 0px 0px;
         border: 0px;
+        width: 550px;
     }
 
     section.services .container h2 {
@@ -489,7 +512,6 @@ footer {
         justify-content: center;
         gap: 10px;
     }
-
 
     .service-item {
         flex: 0 0 80% !important;
@@ -523,7 +545,7 @@ footer {
     /*Seção Video*/
 
     .container-video-apresenta {
-        width: 100vh;
+        width: 550px;
         height: 100%;
     }
 
@@ -539,6 +561,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
+        width: 550px;
     }
 
     section.contato h2 {
@@ -614,6 +637,7 @@ footer {
         padding: 0px;
         border: 0px;
         background-size: cover;
+        width: 550px;
     }
 
     .banner h1 {
@@ -628,7 +652,7 @@ footer {
         border: 0px;
         background-size: cover;
         display: flex;
-        padding: 10px 10px;
+        width: 550px;
     }
 
     .services .container h2 {
@@ -654,7 +678,7 @@ footer {
     /*Seção Video*/
 
     .container-video-apresenta {
-        width: 100vh;
+        width: 550px;
         height: 100%;
     }
 
@@ -670,6 +694,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
+        width: 550px;
     }
 
     section.contato h2 {
@@ -747,6 +772,7 @@ footer {
         padding: 0px;
         border: 0px;
         background-size: cover;
+        width: 550px;
     }
 
     .banner h1 {
@@ -759,7 +785,7 @@ footer {
         margin: 0px;
         background-size: cover;
         display: flex;
-        padding: 10px 10px;
+        width: 550px;
     }
 
     .services .container h2 {
@@ -785,7 +811,7 @@ footer {
     /*Seção Video*/
 
     .container-video-apresenta {
-        width: 100vh;
+        width: 550px;
         height: 100%;
     }
 
@@ -809,6 +835,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 0px 0px;
+        width: 550px;
     }
 
     section.contato h2 {
