@@ -35,6 +35,11 @@ header {
     z-index: 1000;
 }
 
+.logoRalky{
+    color: #ffffff;
+    
+}
+
 .navbar {
     padding: 15px 0;
 }
