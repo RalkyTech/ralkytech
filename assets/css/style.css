@@ -321,7 +321,7 @@ section.contato h2 {
 }
 
 .team-card-front {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #DBC0ED;
     color: #333;
 }
 
@@ -337,7 +337,7 @@ section.contato h2 {
     border-radius: 10%;
     object-fit: cover;
     margin-bottom: 0px;
-    box-shadow: ;
+
 }
 
 .team-card h5 {
